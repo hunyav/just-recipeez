@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.justrecipeez.app-mergeDebugResources-56:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "com.example.justrecipeez.app-mergeDebugResources-58:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c2d7048797a58eca5739af9ba54d6445/transformed/ui-release/res/values-en-rGB/values-en-rGB.xml",

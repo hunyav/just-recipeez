@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.justrecipeez.app-mergeDebugResources-56:/values-et/values-et.xml",
+            "outputFile": "com.example.justrecipeez.app-mergeDebugResources-58:/values-et/values-et.xml",
             "map": [
                 {
                     "source": "/home/hunyav/.gradle/caches/9.0-milestone-1/transforms/6654c717bd931d7d6790e1c646ea6208/transformed/foundation-release/res/values-et/values-et.xml",

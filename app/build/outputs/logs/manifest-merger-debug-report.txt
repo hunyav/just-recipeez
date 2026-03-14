@@ -12,12 +12,14 @@ MERGED from [androidx.navigation:navigation-compose:2.8.4] /home/hunyav/.gradle/
 MERGED from [androidx.activity:activity:1.9.3] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/52f5e3f72bbe189ada33eb6370158232/transformed/activity-1.9.3/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.9.3] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/9208bc887cc8d999a069e8d74f336288/transformed/activity-ktx-1.9.3/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material3:material3-android:1.3.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/132a7f9547f131ce74d27cd4eaea3f7b/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [io.coil-kt:coil-compose:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/018563e932ab9b3f8b4375d6ed009ab4/transformed/coil-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/e1d6e225b713c4cb0998f766d66547c6/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/430e332844f339e5d0abefbe70e6a199/transformed/material-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-ripple-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/636a0885df65fcb263e5cc88c4f54977/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.foundation:foundation-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/6654c717bd931d7d6790e1c646ea6208/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/465cd54324aedff480cf07f50ac68c9c/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.animation:animation-core-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/155e12f452758e1a5e4e152df618c9df/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/636a0885df65fcb263e5cc88c4f54977/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.animation:animation-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/f4339389a157622da410949a837eaffe/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/465cd54324aedff480cf07f50ac68c9c/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/6654c717bd931d7d6790e1c646ea6208/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/29903487ac4df657c75acd5d64f001f2/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-unit-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c7769b17176600c31fdf7f43f21e99a8/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-graphics-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/7371a7444787d9a73cdfa4d192b38539/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
@@ -28,6 +30,8 @@ MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.5] /home/hunyav/
 MERGED from [androidx.compose.ui:ui-test-manifest:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/3152e9e565f2708ae3944145dff9c936/transformed/ui-test-manifest-1.7.5/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.compose.ui:ui-tooling-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/01ed38d0206c1d9e419c6162fab7454c/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.activity:activity-compose:1.9.3] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/0991c89ebcfcf23a24dca1d5711cb456/transformed/activity-compose-1.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/f5c2122e63da8ee35214e2f9fc52a87c/transformed/coil-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-base:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/da265339f09d41f1ff0fb8b735d5281c/transformed/coil-base-2.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/b2445db54c38e29fab12e33896a9786f/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/d348fe27b877a08711c1039ec3417287/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2:1.3.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/b5cd6d9d313459318dba72b7036c4cf5/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
@@ -40,10 +44,14 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /home/hunyav/.gra
 MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.7] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/2fb9cc143f900be1d19a02d6b646127e/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/8ffa56d2741e2d2f54afdc05fa3a03c1/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/9612b245fa87a740d79c61d685cc9ec4/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c2c4b729831c7631cc93dbdb0ab471dc/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.compose.material:material-icons-extended-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/ca426899f29ead1f9deb749c9f80df33/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-core-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/bd516ed3f0addabf7d310dbe03f1bcc6/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c2d7048797a58eca5739af9ba54d6445/transformed/ui-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.autofill:autofill:1.0.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c592d02ae1a8ea1d6b63bd7ec6a78e62/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/e7b8fa852b81d75c47a013862a24cd51/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/6da0315edf4d389520f4a002bbaf059e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/05610bad443c64548bb7c5eff173eecd/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.graphics:graphics-path:1.0.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/4f1a7dbfdc626509290058916b3ddd5a/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.core:core:1.15.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/bf571f3d93cf72f96fd78c48be62209f/transformed/core-1.15.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/bdaf4141b7ca1a8d0fed6e9f01951e67/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
@@ -60,6 +68,7 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/hunyav/.gra
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/da804062a5c521526da8f5afc00c1f5d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.2.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/a061b8c9a180513495b1133500fb853b/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/e5ddd30e9a348d4bd6ea80eedaf50779/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/cd77845765fa54045196cca6d6b73105/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/17b1e7f5bbd97585dab441cd18ee4526/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
 	package
 		INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml
@@ -138,18 +147,22 @@ MERGED from [androidx.activity:activity-ktx:1.9.3] /home/hunyav/.gradle/caches/9
 MERGED from [androidx.activity:activity-ktx:1.9.3] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/9208bc887cc8d999a069e8d74f336288/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material3:material3-android:1.3.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/132a7f9547f131ce74d27cd4eaea3f7b/transformed/material3-release/AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.material3:material3-android:1.3.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/132a7f9547f131ce74d27cd4eaea3f7b/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [io.coil-kt:coil-compose:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/018563e932ab9b3f8b4375d6ed009ab4/transformed/coil-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/018563e932ab9b3f8b4375d6ed009ab4/transformed/coil-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/e1d6e225b713c4cb0998f766d66547c6/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/e1d6e225b713c4cb0998f766d66547c6/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/430e332844f339e5d0abefbe70e6a199/transformed/material-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/430e332844f339e5d0abefbe70e6a199/transformed/material-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/636a0885df65fcb263e5cc88c4f54977/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/636a0885df65fcb263e5cc88c4f54977/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/6654c717bd931d7d6790e1c646ea6208/transformed/foundation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/6654c717bd931d7d6790e1c646ea6208/transformed/foundation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/465cd54324aedff480cf07f50ac68c9c/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/465cd54324aedff480cf07f50ac68c9c/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.animation:animation-core-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/155e12f452758e1a5e4e152df618c9df/transformed/animation-core-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.animation:animation-core-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/155e12f452758e1a5e4e152df618c9df/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/636a0885df65fcb263e5cc88c4f54977/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/636a0885df65fcb263e5cc88c4f54977/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.animation:animation-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/f4339389a157622da410949a837eaffe/transformed/animation-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.animation:animation-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/f4339389a157622da410949a837eaffe/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/465cd54324aedff480cf07f50ac68c9c/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/465cd54324aedff480cf07f50ac68c9c/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/6654c717bd931d7d6790e1c646ea6208/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/6654c717bd931d7d6790e1c646ea6208/transformed/foundation-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/29903487ac4df657c75acd5d64f001f2/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/29903487ac4df657c75acd5d64f001f2/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-unit-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c7769b17176600c31fdf7f43f21e99a8/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
@@ -170,6 +183,10 @@ MERGED from [androidx.compose.ui:ui-tooling-android:1.7.5] /home/hunyav/.gradle/
 MERGED from [androidx.compose.ui:ui-tooling-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/01ed38d0206c1d9e419c6162fab7454c/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity-compose:1.9.3] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/0991c89ebcfcf23a24dca1d5711cb456/transformed/activity-compose-1.9.3/AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity-compose:1.9.3] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/0991c89ebcfcf23a24dca1d5711cb456/transformed/activity-compose-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/f5c2122e63da8ee35214e2f9fc52a87c/transformed/coil-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/f5c2122e63da8ee35214e2f9fc52a87c/transformed/coil-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/da265339f09d41f1ff0fb8b735d5281c/transformed/coil-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.7.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/da265339f09d41f1ff0fb8b735d5281c/transformed/coil-base-2.7.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/b2445db54c38e29fab12e33896a9786f/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/b2445db54c38e29fab12e33896a9786f/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/d348fe27b877a08711c1039ec3417287/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
@@ -194,6 +211,8 @@ MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/hunya
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/8ffa56d2741e2d2f54afdc05fa3a03c1/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/9612b245fa87a740d79c61d685cc9ec4/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/9612b245fa87a740d79c61d685cc9ec4/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c2c4b729831c7631cc93dbdb0ab471dc/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c2c4b729831c7631cc93dbdb0ab471dc/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.compose.material:material-icons-extended-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/ca426899f29ead1f9deb749c9f80df33/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-icons-extended-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/ca426899f29ead1f9deb749c9f80df33/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-icons-core-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/bd516ed3f0addabf7d310dbe03f1bcc6/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
@@ -202,6 +221,12 @@ MERGED from [androidx.compose.ui:ui-android:1.7.5] /home/hunyav/.gradle/caches/9
 MERGED from [androidx.compose.ui:ui-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c2d7048797a58eca5739af9ba54d6445/transformed/ui-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.autofill:autofill:1.0.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c592d02ae1a8ea1d6b63bd7ec6a78e62/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.0.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/c592d02ae1a8ea1d6b63bd7ec6a78e62/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/e7b8fa852b81d75c47a013862a24cd51/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/e7b8fa852b81d75c47a013862a24cd51/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/6da0315edf4d389520f4a002bbaf059e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/6da0315edf4d389520f4a002bbaf059e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/05610bad443c64548bb7c5eff173eecd/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/05610bad443c64548bb7c5eff173eecd/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.graphics:graphics-path:1.0.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/4f1a7dbfdc626509290058916b3ddd5a/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.graphics:graphics-path:1.0.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/4f1a7dbfdc626509290058916b3ddd5a/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core:1.15.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/bf571f3d93cf72f96fd78c48be62209f/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
@@ -234,6 +259,8 @@ MERGED from [androidx.tracing:tracing:1.2.0] /home/hunyav/.gradle/caches/9.0-mil
 MERGED from [androidx.tracing:tracing:1.2.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/a061b8c9a180513495b1133500fb853b/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/e5ddd30e9a348d4bd6ea80eedaf50779/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/e5ddd30e9a348d4bd6ea80eedaf50779/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/cd77845765fa54045196cca6d6b73105/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/cd77845765fa54045196cca6d6b73105/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/17b1e7f5bbd97585dab441cd18ee4526/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/17b1e7f5bbd97585dab441cd18ee4526/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
