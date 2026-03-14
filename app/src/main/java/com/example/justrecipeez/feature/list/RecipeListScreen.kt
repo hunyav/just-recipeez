@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
@@ -24,6 +25,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.justrecipeez.core.ui.RecipeImage
 import com.example.justrecipeez.domain.model.Recipe
 
 @Composable
@@ -85,8 +87,13 @@ private fun RecipeRow(
             .fillMaxWidth()
             .clickable(onClick = onClick)
             .padding(horizontal = 8.dp, vertical = 12.dp),
-        horizontalArrangement = Arrangement.SpaceBetween
+        horizontalArrangement = Arrangement.spacedBy(12.dp)
     ) {
+        RecipeImage(
+            imageUri = recipe.imageUri,
+            contentDescription = recipe.title,
+            modifier = Modifier.size(64.dp)
+        )
         Column(modifier = Modifier.weight(1f)) {
             Text(text = recipe.title, style = MaterialTheme.typography.titleMedium)
             if (recipe.description.isNotBlank()) {

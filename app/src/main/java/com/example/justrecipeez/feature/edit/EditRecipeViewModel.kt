@@ -61,6 +61,7 @@ class EditRecipeViewModel(
     fun onPrepMinutesChange(value: String) = update { copy(prepMinutes = value.filterDigits()) }
     fun onCookMinutesChange(value: String) = update { copy(cookMinutes = value.filterDigits()) }
     fun onServingsChange(value: String) = update { copy(servings = value.filterDigits()) }
+    fun onImageUriChange(value: String) = update { copy(imageUri = value) }
 
     fun save(onComplete: (Long) -> Unit) {
         val state = uiState.value

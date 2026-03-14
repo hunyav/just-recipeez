@@ -88,7 +88,8 @@ fun RecipeNavGraph(
                 onNotesChange = viewModel::onNotesChange,
                 onPrepMinutesChange = viewModel::onPrepMinutesChange,
                 onCookMinutesChange = viewModel::onCookMinutesChange,
-                onServingsChange = viewModel::onServingsChange
+                onServingsChange = viewModel::onServingsChange,
+                onImageUriChange = viewModel::onImageUriChange
             )
         }
     }

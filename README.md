@@ -10,6 +10,7 @@ Private, offline-first Android recipe app built with Kotlin + Jetpack Compose + 
 - Search by title / description / ingredients
 - Favorite toggle
 - CRUD operations
+- Optional recipe image (gallery pick or camera capture)
 
 ## Tech stack
 - Kotlin
