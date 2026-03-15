@@ -30,14 +30,23 @@ interface RecipeDao {
     @Query("SELECT * FROM recipes WHERE id = :id")
     suspend fun getRecipe(id: Long): RecipeEntity?
 
+    @Query("SELECT * FROM recipes ORDER BY updatedUtc DESC")
+    suspend fun getAllRecipes(): List<RecipeEntity>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(entity: RecipeEntity): Long
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAll(entities: List<RecipeEntity>)
 
     @Update
     suspend fun update(entity: RecipeEntity)
 
     @Delete
     suspend fun delete(entity: RecipeEntity)
+
+    @Query("DELETE FROM recipes")
+    suspend fun deleteAll()
 
     @Query("UPDATE recipes SET favorite = :favorite, updatedUtc = :updatedUtc WHERE id = :id")
     suspend fun updateFavorite(id: Long, favorite: Boolean, updatedUtc: Long)

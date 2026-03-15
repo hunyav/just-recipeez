@@ -11,19 +11,26 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 class RecipeListViewModel(
     private val repository: RecipeRepository
 ) : ViewModel() {
     private val queryFlow = MutableStateFlow("")
+    private val syncState = MutableStateFlow(SyncUiState())
 
     val uiState: StateFlow<RecipeListUiState> = queryFlow
-        .flatMapLatest { query ->
-            repository.observeRecipes(query)
-                .combine(queryFlow) { recipes, currentQuery ->
-                    RecipeListUiState(query = currentQuery, recipes = recipes, isLoading = false)
-                }
+        .flatMapLatest { query -> repository.observeRecipes(query) }
+        .combine(queryFlow) { recipes, query -> recipes to query }
+        .combine(syncState) { (recipes, query), sync ->
+            RecipeListUiState(
+                query = query,
+                recipes = recipes,
+                isLoading = false,
+                isSyncing = sync.isSyncing,
+                syncMessage = sync.message
+            )
         }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), RecipeListUiState())
 
@@ -37,6 +44,32 @@ class RecipeListViewModel(
         }
     }
 
+    fun importFromBackup() {
+        viewModelScope.launch {
+            syncState.update { it.copy(isSyncing = true, message = null) }
+            runCatching { repository.importFromBackup() }
+                .onSuccess { count ->
+                    syncState.update { SyncUiState(isSyncing = false, message = "Imported $count recipes") }
+                }
+                .onFailure { error ->
+                    syncState.update { SyncUiState(isSyncing = false, message = error.message ?: "Import failed") }
+                }
+        }
+    }
+
+    fun exportToBackup() {
+        viewModelScope.launch {
+            syncState.update { it.copy(isSyncing = true, message = null) }
+            runCatching { repository.exportToBackup() }
+                .onSuccess { count ->
+                    syncState.update { SyncUiState(isSyncing = false, message = "Exported $count recipes") }
+                }
+                .onFailure { error ->
+                    syncState.update { SyncUiState(isSyncing = false, message = error.message ?: "Export failed") }
+                }
+        }
+    }
+
     companion object {
         fun factory(repository: RecipeRepository): ViewModelProvider.Factory =
             object : ViewModelProvider.Factory {
@@ -46,3 +79,8 @@ class RecipeListViewModel(
             }
     }
 }
+
+data class SyncUiState(
+    val isSyncing: Boolean = false,
+    val message: String? = null
+)

@@ -1,6 +1,7 @@
 package com.example.justrecipeez
 
 import android.app.Application
+import com.example.justrecipeez.data.backup.BackupApi
 import com.example.justrecipeez.data.local.AppDatabase
 import com.example.justrecipeez.data.repository.DefaultRecipeRepository
 
@@ -12,7 +13,11 @@ class RecipeApplication : Application() {
         super.onCreate()
         container = AppContainer(
             recipeRepository = DefaultRecipeRepository(
-                dao = AppDatabase.getInstance(this).recipeDao()
+                dao = AppDatabase.getInstance(this).recipeDao(),
+                backupApi = BackupApi(
+                    baseUrl = BuildConfig.BASE_URL,
+                    token = BuildConfig.BACKUP_API_TOKEN
+                )
             )
         )
     }

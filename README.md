@@ -10,6 +10,9 @@ Private, offline-first Android recipe app built with Kotlin + Jetpack Compose + 
 - Search by title / description / ingredients
 - Favorite toggle
 - CRUD operations
+- Optional recipe image (gallery pick or camera capture)
+- Import latest backup from server
+- Export local recipes to server backup
 
 ## Tech stack
 - Kotlin
@@ -31,3 +34,10 @@ Private, offline-first Android recipe app built with Kotlin + Jetpack Compose + 
 ## Notes
 - This repository currently contains an initial V1 skeleton intended to compile in Android Studio.
 - App icons and image loading are intentionally deferred for V1 scope discipline.
+
+
+## Environment variables
+- `BASE_URL`: backup API base URL (e.g. `https://example.com`)
+- `BACKUP_API_TOKEN`: bearer token for backup API authorization
+
+Both values are read at build time and exposed to app code via `BuildConfig`.

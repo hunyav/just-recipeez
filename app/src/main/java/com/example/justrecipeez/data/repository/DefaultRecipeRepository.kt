@@ -1,5 +1,7 @@
 package com.example.justrecipeez.data.repository
 
+import com.example.justrecipeez.data.backup.BackupApi
+import com.example.justrecipeez.data.backup.BackupRecipeDto
 import com.example.justrecipeez.data.local.RecipeDao
 import com.example.justrecipeez.data.local.toDomain
 import com.example.justrecipeez.data.local.toEntity
@@ -8,7 +10,8 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 class DefaultRecipeRepository(
-    private val dao: RecipeDao
+    private val dao: RecipeDao,
+    private val backupApi: BackupApi
 ) : RecipeRepository {
     override fun observeRecipes(searchQuery: String): Flow<List<Recipe>> {
         val source = if (searchQuery.isBlank()) dao.observeRecipes() else dao.searchRecipes(searchQuery.trim())
@@ -31,5 +34,18 @@ class DefaultRecipeRepository(
 
     override suspend fun setFavorite(id: Long, favorite: Boolean, updatedUtc: Long) {
         dao.updateFavorite(id, favorite, updatedUtc)
+    }
+
+    override suspend fun importFromBackup(): Int {
+        val imported = backupApi.fetchLatestRecipes().map { it.toEntity() }
+        dao.deleteAll()
+        dao.insertAll(imported)
+        return imported.size
+    }
+
+    override suspend fun exportToBackup(): Int {
+        val local = dao.getAllRecipes()
+        backupApi.postBackup(local.map(BackupRecipeDto::fromEntity))
+        return local.size
     }
 }

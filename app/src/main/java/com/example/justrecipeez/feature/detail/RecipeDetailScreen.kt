@@ -3,6 +3,8 @@ package com.example.justrecipeez.feature.detail
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
@@ -19,6 +21,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.justrecipeez.core.ui.RecipeImage
 
 @Composable
 fun RecipeDetailScreen(
@@ -65,6 +68,13 @@ fun RecipeDetailScreen(
                     .padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
+                RecipeImage(
+                    imageUri = recipe.imageUri,
+                    contentDescription = recipe.title,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(220.dp)
+                )
                 Text(recipe.description, style = MaterialTheme.typography.bodyLarge)
                 Text("Ingredients", style = MaterialTheme.typography.titleMedium)
                 Text(recipe.ingredients)

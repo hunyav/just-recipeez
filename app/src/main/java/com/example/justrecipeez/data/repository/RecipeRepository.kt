@@ -11,4 +11,6 @@ interface RecipeRepository {
     suspend fun update(recipe: Recipe)
     suspend fun delete(id: Long)
     suspend fun setFavorite(id: Long, favorite: Boolean, updatedUtc: Long)
+    suspend fun importFromBackup(): Int
+    suspend fun exportToBackup(): Int
 }
