@@ -9,9 +9,8 @@ private val LightColors = lightColorScheme()
 private val DarkColors = darkColorScheme()
 
 @Composable
-fun JustRecipeezTheme(
-    darkTheme: Boolean = false,
-    content: @Composable () -> Unit
+fun JustRecipezTheme(
+    darkTheme: Boolean = false, content: @Composable () -> Unit
 ) {
     MaterialTheme(
         colorScheme = if (darkTheme) DarkColors else LightColors,

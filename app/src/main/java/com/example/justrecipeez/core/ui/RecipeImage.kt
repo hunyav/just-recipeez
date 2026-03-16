@@ -17,9 +17,7 @@ import coil.compose.AsyncImage
 
 @Composable
 fun RecipeImage(
-    imageUri: String?,
-    contentDescription: String,
-    modifier: Modifier = Modifier
+    imageUri: String?, contentDescription: String, modifier: Modifier = Modifier
 ) {
     val shapedModifier = modifier.clip(MaterialTheme.shapes.medium)
     if (imageUri.isNullOrBlank()) {
@@ -38,8 +36,7 @@ fun RecipeImage(
 @Composable
 private fun PlaceholderRecipeImage(modifier: Modifier = Modifier) {
     Box(
-        modifier = modifier
-            .background(MaterialTheme.colorScheme.surfaceVariant),
+        modifier = modifier.background(MaterialTheme.colorScheme.surfaceVariant),
         contentAlignment = Alignment.Center
     ) {
         Icon(

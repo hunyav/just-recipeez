@@ -14,11 +14,8 @@ class BackupApi(
 ) {
     fun fetchLatestRecipes(): List<BackupRecipeDto> {
         ensureConfigured()
-        val request = Request.Builder()
-            .url("${baseUrl.trimEnd('/')}/api/backups/latest")
-            .header("Authorization", "Bearer $token")
-            .get()
-            .build()
+        val request = Request.Builder().url("${baseUrl.trimEnd('/')}/api/backups/latest")
+            .header("Authorization", "Bearer $token").get().build()
 
         client.newCall(request).execute().use { response ->
             if (!response.isSuccessful) {
@@ -39,15 +36,13 @@ class BackupApi(
             recipes.forEach { put(it.toJson()) }
         }
 
-        val root = JSONObject()
-            .put("source", "just-recipeez")
-            .put("appVersion", 1)
-            .put("payload", JSONObject().put("recipes", recipesArray))
+        val root =
+            JSONObject().put("source", "just-recipez").put("appVersion", 1).put("schemaVersion", 1)
+                .put("deviceName", "Earth Witch")
+                .put("payload", JSONObject().put("recipes", recipesArray))
 
-        val request = Request.Builder()
-            .url("${baseUrl.trimEnd('/')}/api/backups")
-            .header("Authorization", "Bearer $token")
-            .header("Content-Type", "application/json")
+        val request = Request.Builder().url("${baseUrl.trimEnd('/')}/api/backups")
+            .header("Authorization", "Bearer $token").header("Content-Type", "application/json")
             .post(root.toString().toRequestBody("application/json; charset=utf-8".toMediaType()))
             .build()
 

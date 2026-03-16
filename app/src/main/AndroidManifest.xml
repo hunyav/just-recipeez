@@ -6,9 +6,9 @@
     <application
         android:name=".RecipeApplication"
         android:allowBackup="true"
-        android:label="JustRecipeez"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.JustRecipeez">
+        android:icon="@android:drawable/picture_frame"
+        android:label="Just Recipez"
+        android:supportsRtl="true">
         <activity
             android:name=".MainActivity"
             android:exported="true">
