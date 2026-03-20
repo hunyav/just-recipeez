@@ -5,7 +5,5 @@ import com.example.justrecipeez.domain.model.Recipe
 data class RecipeListUiState(
     val query: String = "",
     val recipes: List<Recipe> = emptyList(),
-    val isLoading: Boolean = true,
-    val isSyncing: Boolean = false,
-    val syncMessage: String? = null
+    val isLoading: Boolean = true
 )

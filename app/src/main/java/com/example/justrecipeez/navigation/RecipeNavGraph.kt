@@ -37,9 +37,7 @@ fun RecipeNavGraph(
                 onQueryChange = viewModel::onQueryChange,
                 onRecipeClick = { id -> navController.navigate(Destinations.detailRoute(id)) },
                 onAddClick = { navController.navigate(Destinations.editRoute(null)) },
-                onFavoriteToggle = viewModel::onFavoriteToggle,
-                onImportClick = viewModel::importFromBackup,
-                onExportClick = viewModel::exportToBackup
+                onFavoriteToggle = viewModel::onFavoriteToggle
             )
         }
 

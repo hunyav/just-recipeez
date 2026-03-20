@@ -8,8 +8,6 @@
         android:minSdkVersion="26"
         android:targetSdkVersion="35" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <permission
         android:name="com.example.justrecipeez.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -22,7 +20,6 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="false"
-        android:icon="@android:drawable/picture_frame"
         android:label="JustRecipeez"
         android:supportsRtl="true"
         android:testOnly="true" >

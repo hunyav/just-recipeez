@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.navigation:navigation-common:2.8.4] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/26f37b60ec31e0a6fe35a2dc8b94b66f/transformed/navigation-common-2.8.4/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.8.4] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/5fb771b8011d96cb0dfd26047ae41e8a/transformed/navigation-runtime-2.8.4/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.8.4] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/004e81b8f9aacb22117a4f3402f29820/transformed/navigation-common-ktx-2.8.4/AndroidManifest.xml:2:1-7:12
@@ -78,13 +78,9 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/hunyav/.gr
 		INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:2:11-69
-uses-permission#android.permission.INTERNET
-ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:4:5-67
-	android:name
-		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:6:5-21:19
-INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:6:5-21:19
+ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:4:5-18:19
+INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:4:5-18:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/3152e9e565f2708ae3944145dff9c936/transformed/ui-test-manifest-1.7.5/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/3152e9e565f2708ae3944145dff9c936/transformed/ui-test-manifest-1.7.5/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.7.5] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/01ed38d0206c1d9e419c6162fab7454c/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
@@ -108,31 +104,29 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hunya
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.15.0] /home/hunyav/.gradle/caches/9.0-milestone-1/transforms/bf571f3d93cf72f96fd78c48be62209f/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:11:9-35
-	android:label
-		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:10:9-37
-	android:icon
-		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:9:9-55
-	android:allowBackup
 		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:8:9-35
+	android:label
+		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:7:9-37
+	android:allowBackup
+		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:6:9-35
 	android:name
-		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:7:9-42
+		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:5:9-42
 activity#com.example.justrecipeez.MainActivity
-ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:12:9-20:20
+ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:9:9-17:20
 	android:exported
-		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:14:13-36
+		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:11:13-36
 	android:name
-		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:13:13-41
+		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:10:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:12:13-16:29
 action#android.intent.action.MAIN
-ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:13:17-69
 	android:name
-		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:13:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:15:17-77
 	android:name
-		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml:15:27-74
 uses-sdk
 INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/hunyav/AndroidStudioProjects/just-recipeez/app/src/main/AndroidManifest.xml

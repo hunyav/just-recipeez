@@ -37,13 +37,9 @@ public final class RecipeDao_Impl implements RecipeDao {
 
   private final EntityInsertionAdapter<RecipeEntity> __insertionAdapterOfRecipeEntity;
 
-  private final ListStringConverters __listStringConverters = new ListStringConverters();
-
   private final EntityDeletionOrUpdateAdapter<RecipeEntity> __deletionAdapterOfRecipeEntity;
 
   private final EntityDeletionOrUpdateAdapter<RecipeEntity> __updateAdapterOfRecipeEntity;
-
-  private final SharedSQLiteStatement __preparedStmtOfDeleteAll;
 
   private final SharedSQLiteStatement __preparedStmtOfUpdateFavorite;
 
@@ -62,10 +58,8 @@ public final class RecipeDao_Impl implements RecipeDao {
         statement.bindLong(1, entity.getId());
         statement.bindString(2, entity.getTitle());
         statement.bindString(3, entity.getDescription());
-        final String _tmp = __listStringConverters.fromList(entity.getIngredients());
-        statement.bindString(4, _tmp);
-        final String _tmp_1 = __listStringConverters.fromList(entity.getInstructions());
-        statement.bindString(5, _tmp_1);
+        statement.bindString(4, entity.getIngredients());
+        statement.bindString(5, entity.getInstructions());
         statement.bindString(6, entity.getNotes());
         if (entity.getPrepMinutes() == null) {
           statement.bindNull(7);
@@ -82,8 +76,8 @@ public final class RecipeDao_Impl implements RecipeDao {
         } else {
           statement.bindLong(9, entity.getServings());
         }
-        final int _tmp_2 = entity.getFavorite() ? 1 : 0;
-        statement.bindLong(10, _tmp_2);
+        final int _tmp = entity.getFavorite() ? 1 : 0;
+        statement.bindLong(10, _tmp);
         if (entity.getImageUri() == null) {
           statement.bindNull(11);
         } else {
@@ -119,10 +113,8 @@ public final class RecipeDao_Impl implements RecipeDao {
         statement.bindLong(1, entity.getId());
         statement.bindString(2, entity.getTitle());
         statement.bindString(3, entity.getDescription());
-        final String _tmp = __listStringConverters.fromList(entity.getIngredients());
-        statement.bindString(4, _tmp);
-        final String _tmp_1 = __listStringConverters.fromList(entity.getInstructions());
-        statement.bindString(5, _tmp_1);
+        statement.bindString(4, entity.getIngredients());
+        statement.bindString(5, entity.getInstructions());
         statement.bindString(6, entity.getNotes());
         if (entity.getPrepMinutes() == null) {
           statement.bindNull(7);
@@ -139,8 +131,8 @@ public final class RecipeDao_Impl implements RecipeDao {
         } else {
           statement.bindLong(9, entity.getServings());
         }
-        final int _tmp_2 = entity.getFavorite() ? 1 : 0;
-        statement.bindLong(10, _tmp_2);
+        final int _tmp = entity.getFavorite() ? 1 : 0;
+        statement.bindLong(10, _tmp);
         if (entity.getImageUri() == null) {
           statement.bindNull(11);
         } else {
@@ -149,14 +141,6 @@ public final class RecipeDao_Impl implements RecipeDao {
         statement.bindLong(12, entity.getCreatedUtc());
         statement.bindLong(13, entity.getUpdatedUtc());
         statement.bindLong(14, entity.getId());
-      }
-    };
-    this.__preparedStmtOfDeleteAll = new SharedSQLiteStatement(__db) {
-      @Override
-      @NonNull
-      public String createQuery() {
-        final String _query = "DELETE FROM recipes";
-        return _query;
       }
     };
     this.__preparedStmtOfUpdateFavorite = new SharedSQLiteStatement(__db) {
@@ -180,25 +164,6 @@ public final class RecipeDao_Impl implements RecipeDao {
           final Long _result = __insertionAdapterOfRecipeEntity.insertAndReturnId(entity);
           __db.setTransactionSuccessful();
           return _result;
-        } finally {
-          __db.endTransaction();
-        }
-      }
-    }, $completion);
-  }
-
-  @Override
-  public Object insertAll(final List<RecipeEntity> entities,
-      final Continuation<? super Unit> $completion) {
-    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
-      @Override
-      @NonNull
-      public Unit call() throws Exception {
-        __db.beginTransaction();
-        try {
-          __insertionAdapterOfRecipeEntity.insert(entities);
-          __db.setTransactionSuccessful();
-          return Unit.INSTANCE;
         } finally {
           __db.endTransaction();
         }
@@ -237,29 +202,6 @@ public final class RecipeDao_Impl implements RecipeDao {
           return Unit.INSTANCE;
         } finally {
           __db.endTransaction();
-        }
-      }
-    }, $completion);
-  }
-
-  @Override
-  public Object deleteAll(final Continuation<? super Unit> $completion) {
-    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
-      @Override
-      @NonNull
-      public Unit call() throws Exception {
-        final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteAll.acquire();
-        try {
-          __db.beginTransaction();
-          try {
-            _stmt.executeUpdateDelete();
-            __db.setTransactionSuccessful();
-            return Unit.INSTANCE;
-          } finally {
-            __db.endTransaction();
-          }
-        } finally {
-          __preparedStmtOfDeleteAll.release(_stmt);
         }
       }
     }, $completion);
@@ -328,14 +270,10 @@ public final class RecipeDao_Impl implements RecipeDao {
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
             final String _tmpDescription;
             _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            final List<String> _tmpIngredients;
-            final String _tmp;
-            _tmp = _cursor.getString(_cursorIndexOfIngredients);
-            _tmpIngredients = __listStringConverters.toList(_tmp);
-            final List<String> _tmpInstructions;
-            final String _tmp_1;
-            _tmp_1 = _cursor.getString(_cursorIndexOfInstructions);
-            _tmpInstructions = __listStringConverters.toList(_tmp_1);
+            final String _tmpIngredients;
+            _tmpIngredients = _cursor.getString(_cursorIndexOfIngredients);
+            final String _tmpInstructions;
+            _tmpInstructions = _cursor.getString(_cursorIndexOfInstructions);
             final String _tmpNotes;
             _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
             final Integer _tmpPrepMinutes;
@@ -357,9 +295,9 @@ public final class RecipeDao_Impl implements RecipeDao {
               _tmpServings = _cursor.getInt(_cursorIndexOfServings);
             }
             final boolean _tmpFavorite;
-            final int _tmp_2;
-            _tmp_2 = _cursor.getInt(_cursorIndexOfFavorite);
-            _tmpFavorite = _tmp_2 != 0;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfFavorite);
+            _tmpFavorite = _tmp != 0;
             final String _tmpImageUri;
             if (_cursor.isNull(_cursorIndexOfImageUri)) {
               _tmpImageUri = null;
@@ -430,14 +368,10 @@ public final class RecipeDao_Impl implements RecipeDao {
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
             final String _tmpDescription;
             _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            final List<String> _tmpIngredients;
-            final String _tmp;
-            _tmp = _cursor.getString(_cursorIndexOfIngredients);
-            _tmpIngredients = __listStringConverters.toList(_tmp);
-            final List<String> _tmpInstructions;
-            final String _tmp_1;
-            _tmp_1 = _cursor.getString(_cursorIndexOfInstructions);
-            _tmpInstructions = __listStringConverters.toList(_tmp_1);
+            final String _tmpIngredients;
+            _tmpIngredients = _cursor.getString(_cursorIndexOfIngredients);
+            final String _tmpInstructions;
+            _tmpInstructions = _cursor.getString(_cursorIndexOfInstructions);
             final String _tmpNotes;
             _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
             final Integer _tmpPrepMinutes;
@@ -459,9 +393,9 @@ public final class RecipeDao_Impl implements RecipeDao {
               _tmpServings = _cursor.getInt(_cursorIndexOfServings);
             }
             final boolean _tmpFavorite;
-            final int _tmp_2;
-            _tmp_2 = _cursor.getInt(_cursorIndexOfFavorite);
-            _tmpFavorite = _tmp_2 != 0;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfFavorite);
+            _tmpFavorite = _tmp != 0;
             final String _tmpImageUri;
             if (_cursor.isNull(_cursorIndexOfImageUri)) {
               _tmpImageUri = null;
@@ -521,14 +455,10 @@ public final class RecipeDao_Impl implements RecipeDao {
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
             final String _tmpDescription;
             _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            final List<String> _tmpIngredients;
-            final String _tmp;
-            _tmp = _cursor.getString(_cursorIndexOfIngredients);
-            _tmpIngredients = __listStringConverters.toList(_tmp);
-            final List<String> _tmpInstructions;
-            final String _tmp_1;
-            _tmp_1 = _cursor.getString(_cursorIndexOfInstructions);
-            _tmpInstructions = __listStringConverters.toList(_tmp_1);
+            final String _tmpIngredients;
+            _tmpIngredients = _cursor.getString(_cursorIndexOfIngredients);
+            final String _tmpInstructions;
+            _tmpInstructions = _cursor.getString(_cursorIndexOfInstructions);
             final String _tmpNotes;
             _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
             final Integer _tmpPrepMinutes;
@@ -550,9 +480,9 @@ public final class RecipeDao_Impl implements RecipeDao {
               _tmpServings = _cursor.getInt(_cursorIndexOfServings);
             }
             final boolean _tmpFavorite;
-            final int _tmp_2;
-            _tmp_2 = _cursor.getInt(_cursorIndexOfFavorite);
-            _tmpFavorite = _tmp_2 != 0;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfFavorite);
+            _tmpFavorite = _tmp != 0;
             final String _tmpImageUri;
             if (_cursor.isNull(_cursorIndexOfImageUri)) {
               _tmpImageUri = null;
@@ -614,14 +544,10 @@ public final class RecipeDao_Impl implements RecipeDao {
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
             final String _tmpDescription;
             _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            final List<String> _tmpIngredients;
-            final String _tmp;
-            _tmp = _cursor.getString(_cursorIndexOfIngredients);
-            _tmpIngredients = __listStringConverters.toList(_tmp);
-            final List<String> _tmpInstructions;
-            final String _tmp_1;
-            _tmp_1 = _cursor.getString(_cursorIndexOfInstructions);
-            _tmpInstructions = __listStringConverters.toList(_tmp_1);
+            final String _tmpIngredients;
+            _tmpIngredients = _cursor.getString(_cursorIndexOfIngredients);
+            final String _tmpInstructions;
+            _tmpInstructions = _cursor.getString(_cursorIndexOfInstructions);
             final String _tmpNotes;
             _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
             final Integer _tmpPrepMinutes;
@@ -643,9 +569,9 @@ public final class RecipeDao_Impl implements RecipeDao {
               _tmpServings = _cursor.getInt(_cursorIndexOfServings);
             }
             final boolean _tmpFavorite;
-            final int _tmp_2;
-            _tmp_2 = _cursor.getInt(_cursorIndexOfFavorite);
-            _tmpFavorite = _tmp_2 != 0;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfFavorite);
+            _tmpFavorite = _tmp != 0;
             final String _tmpImageUri;
             if (_cursor.isNull(_cursorIndexOfImageUri)) {
               _tmpImageUri = null;
@@ -659,93 +585,6 @@ public final class RecipeDao_Impl implements RecipeDao {
             _result = new RecipeEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpIngredients,_tmpInstructions,_tmpNotes,_tmpPrepMinutes,_tmpCookMinutes,_tmpServings,_tmpFavorite,_tmpImageUri,_tmpCreatedUtc,_tmpUpdatedUtc);
           } else {
             _result = null;
-          }
-          return _result;
-        } finally {
-          _cursor.close();
-          _statement.release();
-        }
-      }
-    }, $completion);
-  }
-
-  @Override
-  public Object getAllRecipes(final Continuation<? super List<RecipeEntity>> $completion) {
-    final String _sql = "SELECT * FROM recipes ORDER BY updatedUtc DESC";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
-    final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
-    return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<List<RecipeEntity>>() {
-      @Override
-      @NonNull
-      public List<RecipeEntity> call() throws Exception {
-        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
-        try {
-          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
-          final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
-          final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
-          final int _cursorIndexOfIngredients = CursorUtil.getColumnIndexOrThrow(_cursor, "ingredients");
-          final int _cursorIndexOfInstructions = CursorUtil.getColumnIndexOrThrow(_cursor, "instructions");
-          final int _cursorIndexOfNotes = CursorUtil.getColumnIndexOrThrow(_cursor, "notes");
-          final int _cursorIndexOfPrepMinutes = CursorUtil.getColumnIndexOrThrow(_cursor, "prepMinutes");
-          final int _cursorIndexOfCookMinutes = CursorUtil.getColumnIndexOrThrow(_cursor, "cookMinutes");
-          final int _cursorIndexOfServings = CursorUtil.getColumnIndexOrThrow(_cursor, "servings");
-          final int _cursorIndexOfFavorite = CursorUtil.getColumnIndexOrThrow(_cursor, "favorite");
-          final int _cursorIndexOfImageUri = CursorUtil.getColumnIndexOrThrow(_cursor, "imageUri");
-          final int _cursorIndexOfCreatedUtc = CursorUtil.getColumnIndexOrThrow(_cursor, "createdUtc");
-          final int _cursorIndexOfUpdatedUtc = CursorUtil.getColumnIndexOrThrow(_cursor, "updatedUtc");
-          final List<RecipeEntity> _result = new ArrayList<RecipeEntity>(_cursor.getCount());
-          while (_cursor.moveToNext()) {
-            final RecipeEntity _item;
-            final long _tmpId;
-            _tmpId = _cursor.getLong(_cursorIndexOfId);
-            final String _tmpTitle;
-            _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
-            final String _tmpDescription;
-            _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            final List<String> _tmpIngredients;
-            final String _tmp;
-            _tmp = _cursor.getString(_cursorIndexOfIngredients);
-            _tmpIngredients = __listStringConverters.toList(_tmp);
-            final List<String> _tmpInstructions;
-            final String _tmp_1;
-            _tmp_1 = _cursor.getString(_cursorIndexOfInstructions);
-            _tmpInstructions = __listStringConverters.toList(_tmp_1);
-            final String _tmpNotes;
-            _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
-            final Integer _tmpPrepMinutes;
-            if (_cursor.isNull(_cursorIndexOfPrepMinutes)) {
-              _tmpPrepMinutes = null;
-            } else {
-              _tmpPrepMinutes = _cursor.getInt(_cursorIndexOfPrepMinutes);
-            }
-            final Integer _tmpCookMinutes;
-            if (_cursor.isNull(_cursorIndexOfCookMinutes)) {
-              _tmpCookMinutes = null;
-            } else {
-              _tmpCookMinutes = _cursor.getInt(_cursorIndexOfCookMinutes);
-            }
-            final Integer _tmpServings;
-            if (_cursor.isNull(_cursorIndexOfServings)) {
-              _tmpServings = null;
-            } else {
-              _tmpServings = _cursor.getInt(_cursorIndexOfServings);
-            }
-            final boolean _tmpFavorite;
-            final int _tmp_2;
-            _tmp_2 = _cursor.getInt(_cursorIndexOfFavorite);
-            _tmpFavorite = _tmp_2 != 0;
-            final String _tmpImageUri;
-            if (_cursor.isNull(_cursorIndexOfImageUri)) {
-              _tmpImageUri = null;
-            } else {
-              _tmpImageUri = _cursor.getString(_cursorIndexOfImageUri);
-            }
-            final long _tmpCreatedUtc;
-            _tmpCreatedUtc = _cursor.getLong(_cursorIndexOfCreatedUtc);
-            final long _tmpUpdatedUtc;
-            _tmpUpdatedUtc = _cursor.getLong(_cursorIndexOfUpdatedUtc);
-            _item = new RecipeEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpIngredients,_tmpInstructions,_tmpNotes,_tmpPrepMinutes,_tmpCookMinutes,_tmpServings,_tmpFavorite,_tmpImageUri,_tmpCreatedUtc,_tmpUpdatedUtc);
-            _result.add(_item);
           }
           return _result;
         } finally {

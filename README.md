@@ -11,41 +11,6 @@ Private, offline-first Android recipe app built with Kotlin + Jetpack Compose + 
 - Favorite toggle
 - CRUD operations
 - Optional recipe image (gallery pick or camera capture)
-- Import latest backup from server
-- Export local recipes to server backup
-
-## Data notes
-- `ingredients` and `instructions` are stored as **lists of strings**.
-- In Add/Edit, users enter them as multiline text (one line per item).
-- In Detail, each ingredient and instruction is shown with a checkbox for progress tracking.
-
-## Backup payload shape (export)
-```json
-{
-  "schemaVersion": 1,
-  "source": "just-recipeez",
-  "deviceName": "earth-witch",
-  "payload": {
-    "recipes": [
-      {
-        "id": "1",
-        "title": "...",
-        "description": "...",
-        "ingredients": ["..."],
-        "instructions": ["..."],
-        "notes": "...",
-        "prepMinutes": 5,
-        "cookMinutes": 20,
-        "servings": 12,
-        "favorite": true,
-        "imageUri": "",
-        "createdUtc": 0,
-        "updatedUtc": 0
-      }
-    ]
-  }
-}
-```
 
 ## Tech stack
 - Kotlin
@@ -64,8 +29,6 @@ Private, offline-first Android recipe app built with Kotlin + Jetpack Compose + 
 - `navigation`: app navigation routes + NavHost
 - `core/ui/theme`: Compose theme
 
-## Environment variables
-- `BASE_URL`: backup API base URL (e.g. `https://example.com`)
-- `BACKUP_API_TOKEN`: bearer token for backup API authorization
-
-Both values are read at build time and exposed to app code via `BuildConfig`.
+## Notes
+- This repository currently contains an initial V1 skeleton intended to compile in Android Studio.
+- App icons and image loading are intentionally deferred for V1 scope discipline.

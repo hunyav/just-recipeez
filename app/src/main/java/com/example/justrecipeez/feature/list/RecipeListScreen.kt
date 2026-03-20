@@ -19,7 +19,6 @@ import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -36,8 +35,6 @@ fun RecipeListScreen(
     onRecipeClick: (Long) -> Unit,
     onAddClick: () -> Unit,
     onFavoriteToggle: (Long, Boolean) -> Unit,
-    onImportClick: () -> Unit,
-    onExportClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Scaffold(
@@ -62,19 +59,6 @@ fun RecipeListScreen(
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true
             )
-
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                OutlinedButton(onClick = onImportClick, enabled = !uiState.isSyncing) {
-                    Text("Import")
-                }
-                OutlinedButton(onClick = onExportClick, enabled = !uiState.isSyncing) {
-                    Text("Export")
-                }
-            }
-
-            uiState.syncMessage?.let {
-                Text(text = it, style = MaterialTheme.typography.bodyMedium)
-            }
 
             LazyColumn(
                 contentPadding = PaddingValues(bottom = 100.dp),

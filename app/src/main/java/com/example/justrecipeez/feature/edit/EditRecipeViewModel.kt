@@ -38,8 +38,8 @@ class EditRecipeViewModel(
                     id = recipe.id,
                     title = recipe.title,
                     description = recipe.description,
-                    ingredients = recipe.ingredients.joinToString("\n"),
-                    instructions = recipe.instructions.joinToString("\n"),
+                    ingredients = recipe.ingredients,
+                    instructions = recipe.instructions,
                     notes = recipe.notes,
                     prepMinutes = recipe.prepMinutes?.toString().orEmpty(),
                     cookMinutes = recipe.cookMinutes?.toString().orEmpty(),
@@ -73,8 +73,8 @@ class EditRecipeViewModel(
                 id = state.id ?: 0,
                 title = state.title.trim(),
                 description = state.description.trim(),
-                ingredients = state.ingredients.toLines(),
-                instructions = state.instructions.toLines(),
+                ingredients = state.ingredients.trim(),
+                instructions = state.instructions.trim(),
                 notes = state.notes.trim(),
                 prepMinutes = state.prepMinutes.toIntOrNull(),
                 cookMinutes = state.cookMinutes.toIntOrNull(),
@@ -105,11 +105,6 @@ class EditRecipeViewModel(
     }
 
     private fun String.filterDigits(): String = filter { it.isDigit() }
-
-    private fun String.toLines(): List<String> = lineSequence()
-        .map { it.trim() }
-        .filter { it.isNotBlank() }
-        .toList()
 
     companion object {
         fun factory(recipeId: Long?, repository: RecipeRepository): ViewModelProvider.Factory =

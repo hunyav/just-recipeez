@@ -120,13 +120,13 @@ fun EditRecipeScreen(
             OutlinedTextField(
                 value = uiState.ingredients,
                 onValueChange = onIngredientsChange,
-                label = { Text("Ingredients (one per line)") },
+                label = { Text("Ingredients") },
                 modifier = Modifier.fillMaxWidth()
             )
             OutlinedTextField(
                 value = uiState.instructions,
                 onValueChange = onInstructionsChange,
-                label = { Text("Instructions (one per line)") },
+                label = { Text("Instructions") },
                 modifier = Modifier.fillMaxWidth()
             )
             OutlinedTextField(

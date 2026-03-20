@@ -4,10 +4,8 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.room.TypeConverters
 
-@Database(entities = [RecipeEntity::class], version = 2, exportSchema = false)
-@TypeConverters(ListStringConverters::class)
+@Database(entities = [RecipeEntity::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun recipeDao(): RecipeDao
 
@@ -20,10 +18,7 @@ abstract class AppDatabase : RoomDatabase() {
                 context.applicationContext,
                 AppDatabase::class.java,
                 "just_recipeez.db"
-            )
-                .fallbackToDestructiveMigration()
-                .build()
-                .also { INSTANCE = it }
+            ).build().also { INSTANCE = it }
         }
     }
 }
