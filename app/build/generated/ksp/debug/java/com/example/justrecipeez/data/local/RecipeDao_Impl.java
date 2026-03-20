@@ -58,8 +58,6 @@ public final class RecipeDao_Impl implements RecipeDao {
         statement.bindLong(1, entity.getId());
         statement.bindString(2, entity.getTitle());
         statement.bindString(3, entity.getDescription());
-        statement.bindString(4, entity.getIngredients());
-        statement.bindString(5, entity.getInstructions());
         statement.bindString(6, entity.getNotes());
         if (entity.getPrepMinutes() == null) {
           statement.bindNull(7);
@@ -113,8 +111,6 @@ public final class RecipeDao_Impl implements RecipeDao {
         statement.bindLong(1, entity.getId());
         statement.bindString(2, entity.getTitle());
         statement.bindString(3, entity.getDescription());
-        statement.bindString(4, entity.getIngredients());
-        statement.bindString(5, entity.getInstructions());
         statement.bindString(6, entity.getNotes());
         if (entity.getPrepMinutes() == null) {
           statement.bindNull(7);
@@ -270,10 +266,8 @@ public final class RecipeDao_Impl implements RecipeDao {
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
             final String _tmpDescription;
             _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            final String _tmpIngredients;
-            _tmpIngredients = _cursor.getString(_cursorIndexOfIngredients);
-            final String _tmpInstructions;
-            _tmpInstructions = _cursor.getString(_cursorIndexOfInstructions);
+            final List<String> _tmpIngredients;
+            final List<String> _tmpInstructions;
             final String _tmpNotes;
             _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
             final Integer _tmpPrepMinutes;
@@ -368,10 +362,8 @@ public final class RecipeDao_Impl implements RecipeDao {
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
             final String _tmpDescription;
             _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            final String _tmpIngredients;
-            _tmpIngredients = _cursor.getString(_cursorIndexOfIngredients);
-            final String _tmpInstructions;
-            _tmpInstructions = _cursor.getString(_cursorIndexOfInstructions);
+            final List<String> _tmpIngredients;
+            final List<String> _tmpInstructions;
             final String _tmpNotes;
             _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
             final Integer _tmpPrepMinutes;
@@ -455,10 +447,8 @@ public final class RecipeDao_Impl implements RecipeDao {
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
             final String _tmpDescription;
             _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            final String _tmpIngredients;
-            _tmpIngredients = _cursor.getString(_cursorIndexOfIngredients);
-            final String _tmpInstructions;
-            _tmpInstructions = _cursor.getString(_cursorIndexOfInstructions);
+            final List<String> _tmpIngredients;
+            final List<String> _tmpInstructions;
             final String _tmpNotes;
             _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
             final Integer _tmpPrepMinutes;
@@ -544,10 +534,8 @@ public final class RecipeDao_Impl implements RecipeDao {
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
             final String _tmpDescription;
             _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
-            final String _tmpIngredients;
-            _tmpIngredients = _cursor.getString(_cursorIndexOfIngredients);
-            final String _tmpInstructions;
-            _tmpInstructions = _cursor.getString(_cursorIndexOfInstructions);
+            final List<String> _tmpIngredients;
+            final List<String> _tmpInstructions;
             final String _tmpNotes;
             _tmpNotes = _cursor.getString(_cursorIndexOfNotes);
             final Integer _tmpPrepMinutes;
