@@ -10,7 +10,7 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
   // Field from default config.
-  public static final String BACKUP_API_TOKEN = "two-thousand-thursdays";
+  public static final String BACKUP_API_TOKEN = "";
   // Field from default config.
-  public static final String BASE_URL = "https://just-recipez-api.ninehearts-sandbox.com";
+  public static final String BASE_URL = "";
 }
