@@ -15,6 +15,7 @@ Private, offline-first Android recipe app built with Kotlin + Jetpack Compose + 
 - Export local recipes to server backup
 - Tag recipes and include tags in search
 - Bottom navigation with Recipes and Settings tabs
+- Typewriter-like typography with parchment-inspired light theme
 
 ## Data notes
 - `ingredients` and `instructions` are stored as **lists of strings**.
