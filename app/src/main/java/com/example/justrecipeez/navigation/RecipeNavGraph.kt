@@ -1,5 +1,6 @@
 package com.example.justrecipeez.navigation
 
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MenuBook
@@ -38,6 +39,7 @@ fun RecipeNavGraph(
     val currentRoute = navController.currentBackStackEntryAsState().value?.destination?.route
 
     Scaffold(
+        contentWindowInsets = WindowInsets(0, 0, 0, 0),
         bottomBar = {
             NavigationBar {
                 NavigationBarItem(
