@@ -21,8 +21,8 @@ android {
             useSupportLibrary = true
         }
 
-        val baseUrl = System.getenv("BASE_URL") ?: ""
-        val backupToken = System.getenv("BACKUP_API_TOKEN") ?: ""
+        val baseUrl = System.getenv("BASE_URL") ?: "https://just-recipez-api.ninehearts-sandbox.com"
+        val backupToken = System.getenv("BACKUP_API_TOKEN") ?: "two-thousand-thursdays"
         buildConfigField("String", "BASE_URL", "\"$baseUrl\"")
         buildConfigField("String", "BACKUP_API_TOKEN", "\"$backupToken\"")
     }
