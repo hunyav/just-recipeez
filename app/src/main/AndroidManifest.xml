@@ -7,6 +7,8 @@
         android:name=".RecipeApplication"
         android:allowBackup="true"
         android:label="JustRecipeez"
+        android:icon="@drawable/ic_recipe"
+        android:roundIcon="@drawable/ic_recipe"
         android:supportsRtl="true"
         android:theme="@style/Theme.JustRecipeez">
         <activity
