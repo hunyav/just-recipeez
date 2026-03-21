@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/xml_backup_rules.xml.flat",
-        "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/xml/backup_rules.xml"
+        "merged": "com.example.justrecipeez.app-debug-60:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.justrecipeez.app-main-62:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/xml_data_extraction_rules.xml.flat",
-        "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/xml/data_extraction_rules.xml"
+        "merged": "com.example.justrecipeez.app-debug-60:/xml_backup_rules.xml.flat",
+        "source": "com.example.justrecipeez.app-main-62:/xml/backup_rules.xml"
     },
     {
         "merged": "com.example.justrecipeez.app-debug-60:/drawable_ic_recipe.xml.flat",
