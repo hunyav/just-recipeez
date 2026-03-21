@@ -4,6 +4,7 @@ data class EditRecipeUiState(
     val id: Long? = null,
     val title: String = "",
     val description: String = "",
+    val tags: String = "",
     val ingredients: String = "",
     val instructions: String = "",
     val notes: String = "",

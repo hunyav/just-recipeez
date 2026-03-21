@@ -20,6 +20,7 @@ interface RecipeDao {
         SELECT * FROM recipes
         WHERE title LIKE '%' || :query || '%'
            OR description LIKE '%' || :query || '%'
+           OR tags LIKE '%' || :query || '%'
            OR ingredients LIKE '%' || :query || '%'
         ORDER BY updatedUtc DESC
         """

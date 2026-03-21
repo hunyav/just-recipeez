@@ -8,6 +8,7 @@ data class BackupRecipeDto(
     val id: String? = null,
     val title: String,
     val description: String,
+    val tags: List<String>,
     val ingredients: List<String>,
     val instructions: List<String>,
     val notes: String,
@@ -23,6 +24,7 @@ data class BackupRecipeDto(
         id = 0,
         title = title,
         description = description,
+        tags = tags,
         ingredients = ingredients,
         instructions = instructions,
         notes = notes,
@@ -39,6 +41,7 @@ data class BackupRecipeDto(
         .put("id", id)
         .put("title", title)
         .put("description", description)
+        .put("tags", JSONArray(tags))
         .put("ingredients", JSONArray(ingredients))
         .put("instructions", JSONArray(instructions))
         .put("notes", notes)
@@ -55,6 +58,7 @@ data class BackupRecipeDto(
             id = entity.id.toString(),
             title = entity.title,
             description = entity.description,
+            tags = entity.tags,
             ingredients = entity.ingredients,
             instructions = entity.instructions,
             notes = entity.notes,
@@ -71,6 +75,7 @@ data class BackupRecipeDto(
             id = json.optString("id").takeIf { it.isNotBlank() },
             title = json.optString("title"),
             description = json.optString("description"),
+            tags = json.optStringList("tags"),
             ingredients = json.optStringList("ingredients"),
             instructions = json.optStringList("instructions"),
             notes = json.optString("notes"),

@@ -19,7 +19,6 @@ import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -36,8 +35,6 @@ fun RecipeListScreen(
     onRecipeClick: (Long) -> Unit,
     onAddClick: () -> Unit,
     onFavoriteToggle: (Long, Boolean) -> Unit,
-    onImportClick: () -> Unit,
-    onExportClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Scaffold(
@@ -58,23 +55,10 @@ fun RecipeListScreen(
             OutlinedTextField(
                 value = uiState.query,
                 onValueChange = onQueryChange,
-                label = { Text("Search recipes") },
+                label = { Text("Search recipes (title, description, ingredients, tags)") },
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true
             )
-
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                OutlinedButton(onClick = onImportClick, enabled = !uiState.isSyncing) {
-                    Text("Import")
-                }
-                OutlinedButton(onClick = onExportClick, enabled = !uiState.isSyncing) {
-                    Text("Export")
-                }
-            }
-
-            uiState.syncMessage?.let {
-                Text(text = it, style = MaterialTheme.typography.bodyMedium)
-            }
 
             LazyColumn(
                 contentPadding = PaddingValues(bottom = 100.dp),
@@ -112,6 +96,9 @@ private fun RecipeRow(
         )
         Column(modifier = Modifier.weight(1f)) {
             Text(text = recipe.title, style = MaterialTheme.typography.titleMedium)
+            if (recipe.tags.isNotEmpty()) {
+                Text(text = recipe.tags.joinToString(" • "), style = MaterialTheme.typography.bodySmall)
+            }
             if (recipe.description.isNotBlank()) {
                 Text(text = recipe.description, style = MaterialTheme.typography.bodyMedium)
             }

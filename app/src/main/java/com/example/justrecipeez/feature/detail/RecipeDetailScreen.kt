@@ -87,6 +87,11 @@ fun RecipeDetailScreen(
                 )
                 Text(recipe.description, style = MaterialTheme.typography.bodyLarge)
 
+                if (recipe.tags.isNotEmpty()) {
+                    Text("Tags", style = MaterialTheme.typography.titleMedium)
+                    Text(recipe.tags.joinToString(" • "))
+                }
+
                 Text("Ingredients", style = MaterialTheme.typography.titleMedium)
                 recipe.ingredients.forEachIndexed { index, line ->
                     CheckableLine(

@@ -13,6 +13,8 @@ Private, offline-first Android recipe app built with Kotlin + Jetpack Compose + 
 - Optional recipe image (gallery pick or camera capture)
 - Import latest backup from server
 - Export local recipes to server backup
+- Tag recipes and include tags in search
+- Bottom navigation with Recipes and Settings tabs
 
 ## Data notes
 - `ingredients` and `instructions` are stored as **lists of strings**.
@@ -31,6 +33,7 @@ Private, offline-first Android recipe app built with Kotlin + Jetpack Compose + 
         "id": "1",
         "title": "...",
         "description": "...",
+        "tags": ["..."],
         "ingredients": ["..."],
         "instructions": ["..."],
         "notes": "...",

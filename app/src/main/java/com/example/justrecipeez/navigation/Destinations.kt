@@ -4,6 +4,7 @@ object Destinations {
     const val LIST = "list"
     const val DETAIL = "detail"
     const val EDIT = "edit"
+    const val SETTINGS = "settings"
 
     const val RECIPE_ID_ARG = "recipeId"
 

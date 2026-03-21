@@ -38,6 +38,7 @@ class EditRecipeViewModel(
                     id = recipe.id,
                     title = recipe.title,
                     description = recipe.description,
+                    tags = recipe.tags.joinToString("\n"),
                     ingredients = recipe.ingredients.joinToString("\n"),
                     instructions = recipe.instructions.joinToString("\n"),
                     notes = recipe.notes,
@@ -55,6 +56,7 @@ class EditRecipeViewModel(
 
     fun onTitleChange(value: String) = update { copy(title = value.trimStart()) }
     fun onDescriptionChange(value: String) = update { copy(description = value) }
+    fun onTagsChange(value: String) = update { copy(tags = value) }
     fun onIngredientsChange(value: String) = update { copy(ingredients = value) }
     fun onInstructionsChange(value: String) = update { copy(instructions = value) }
     fun onNotesChange(value: String) = update { copy(notes = value) }
@@ -73,6 +75,7 @@ class EditRecipeViewModel(
                 id = state.id ?: 0,
                 title = state.title.trim(),
                 description = state.description.trim(),
+                tags = state.tags.toLines(),
                 ingredients = state.ingredients.toLines(),
                 instructions = state.instructions.toLines(),
                 notes = state.notes.trim(),

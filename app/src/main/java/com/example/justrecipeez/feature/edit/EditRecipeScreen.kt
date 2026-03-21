@@ -34,6 +34,7 @@ fun EditRecipeScreen(
     onSaveClick: () -> Unit,
     onTitleChange: (String) -> Unit,
     onDescriptionChange: (String) -> Unit,
+    onTagsChange: (String) -> Unit,
     onIngredientsChange: (String) -> Unit,
     onInstructionsChange: (String) -> Unit,
     onNotesChange: (String) -> Unit,
@@ -113,6 +114,12 @@ fun EditRecipeScreen(
                 value = uiState.description,
                 onValueChange = onDescriptionChange,
                 label = { Text("Description") },
+                modifier = Modifier.fillMaxWidth()
+            )
+            OutlinedTextField(
+                value = uiState.tags,
+                onValueChange = onTagsChange,
+                label = { Text("Tags (one per line)") },
                 modifier = Modifier.fillMaxWidth()
             )
             OutlinedTextField(
