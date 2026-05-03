@@ -22,7 +22,9 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="false"
+        android:icon="@drawable/ic_launcher"
         android:label="JustRecipeez"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true" >
         <activity

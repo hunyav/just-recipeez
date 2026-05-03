@@ -55,7 +55,7 @@ fun RecipeListScreen(
             OutlinedTextField(
                 value = uiState.query,
                 onValueChange = onQueryChange,
-                label = { Text("Search recipes (title, description, ingredients, tags)") },
+                label = { Text("Search recipes") },
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true
             )
