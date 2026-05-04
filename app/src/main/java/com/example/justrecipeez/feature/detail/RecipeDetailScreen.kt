@@ -3,6 +3,7 @@ package com.example.justrecipeez.feature.detail
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -10,11 +11,17 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Category
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.material3.AssistChip
+import androidx.compose.material3.AssistChipDefaults
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -78,23 +85,40 @@ fun RecipeDetailScreen(
                     .padding(padding)
                     .padding(16.dp)
                     .verticalScroll(rememberScrollState()),
-                verticalArrangement = Arrangement.spacedBy(12.dp)
+                verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-                RecipeImage(
-                    imageUri = recipe.imageUri,
-                    contentDescription = recipe.title,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(220.dp)
-                )
-                Text(recipe.description, style = MaterialTheme.typography.bodyLarge)
-
-                if (recipe.tags.isNotEmpty()) {
-                    Text("Tags", style = MaterialTheme.typography.titleMedium)
-                    Text(recipe.tags.joinToString(" • "))
+                Card(
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)
+                ) {
+                    RecipeImage(
+                        imageUri = recipe.imageUri,
+                        contentDescription = recipe.title,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(240.dp)
+                    )
                 }
 
-                Text("Ingredients", style = MaterialTheme.typography.titleMedium)
+                if (recipe.description.isNotBlank()) {
+                    Text(recipe.description, style = MaterialTheme.typography.bodyLarge)
+                }
+
+                if (recipe.tags.isNotEmpty()) {
+                    SectionHeader(text = "Tags")
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        recipe.tags.forEach { tag ->
+                            AssistChip(
+                                onClick = {},
+                                label = { Text(tag) },
+                                colors = AssistChipDefaults.assistChipColors()
+                            )
+                        }
+                    }
+                }
+
+                Divider()
+                SectionHeader(text = "Ingredients")
                 recipe.ingredients.forEachIndexed { index, line ->
                     CheckableLine(
                         key = "ingredient-$index",
@@ -103,7 +127,8 @@ fun RecipeDetailScreen(
                     )
                 }
 
-                Text("Instructions", style = MaterialTheme.typography.titleMedium)
+                Divider()
+                SectionHeader(text = "Instructions")
                 recipe.instructions.forEachIndexed { index, line ->
                     CheckableLine(
                         key = "instruction-$index",
@@ -113,11 +138,22 @@ fun RecipeDetailScreen(
                 }
 
                 if (recipe.notes.isNotBlank()) {
-                    Text("Notes", style = MaterialTheme.typography.titleMedium)
+                    Divider()
+                    SectionHeader(text = "Notes")
                     Text(recipe.notes)
                 }
+
+                Spacer(Modifier.height(24.dp))
             }
         }
+    }
+}
+
+@Composable
+private fun SectionHeader(text: String) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Icon(imageVector = Icons.Default.Category, contentDescription = null)
+        Text(text = text, style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 8.dp))
     }
 }
 
