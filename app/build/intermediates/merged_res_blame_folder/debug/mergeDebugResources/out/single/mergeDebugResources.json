@@ -4,6 +4,18 @@
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/xml_data_extraction_rules.xml.flat",
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/xml/data_extraction_rules.xml"
     },
@@ -12,20 +24,40 @@
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/drawable/ic_launcher.jpg"
     },
     {
-        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.justrecipeez.app-main-62:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -38,6 +70,10 @@
     {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-mdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/xml_backup_rules.xml.flat",
@@ -56,6 +92,10 @@
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
@@ -68,8 +108,8 @@
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.justrecipeez.app-main-62:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
@@ -84,12 +124,24 @@
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-mdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-main-62:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.justrecipeez.app-debug-60:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.justrecipeez.app-main-62:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/hunyav/.gradle/daemon/9.0-milestone-1/com.example.justrecipeez.app-debug-60:/drawable_ic_launcher_background.xml.flat",
